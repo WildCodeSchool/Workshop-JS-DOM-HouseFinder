@@ -63,13 +63,14 @@ function createCard(data) {
 	div.innerHTML = card;
 	section.appendChild(div);
 }
-function filter() {
-	selectValue = document.getElementById('select').value;
-}
 function render() {
 	section.innerHTML = '';
 	for (let i = 0; i < homes.length; i++) {
 		createCard(homes[i]);
 	}
+}
+function filter() {
+	selectValue = document.getElementById('select').value;
+	render();
 }
 render();
