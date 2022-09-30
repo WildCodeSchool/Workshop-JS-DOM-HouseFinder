@@ -66,7 +66,8 @@ function createCard(data) {
 function render() {
 	section.innerHTML = '';
 	for (let i = 0; i < homes.length; i++) {
-		if (selectValue === homes[i].type) createCard(homes[i]);
+		if (selectValue === homes[i].type || selectValue === 'All')
+			createCard(homes[i]);
 	}
 }
 function filter() {
