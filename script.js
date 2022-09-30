@@ -1,5 +1,7 @@
 const section = document.getElementById('homes');
 
+let selectValue = 'All';
+
 const home = {
 	name: 'Modern flat',
 	type: 'House',
