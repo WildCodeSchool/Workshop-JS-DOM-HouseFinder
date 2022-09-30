@@ -7,7 +7,7 @@ const home = {
 	img: 'https://cf.bstatic.com/images/hotel/max1024x768/177/177622915.jpg',
 	available: true,
 };
-function createCard() {
+function createCard(data) {
 	const card = `
   <article class="card-body">
   <h1 class="card-title">this is a house</h1>
@@ -23,4 +23,4 @@ function createCard() {
 	div.innerHTML = card;
 	section.appendChild(div);
 }
-createCard();
+createCard(home);
