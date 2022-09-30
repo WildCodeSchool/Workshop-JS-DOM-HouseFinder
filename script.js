@@ -1,5 +1,12 @@
 const section = document.getElementById('homes');
 
+const home = {
+	name: 'Modern flat',
+	type: 'House',
+	desc: "This is the perfect house for you, come to visit it you'll love it ",
+	img: 'https://cf.bstatic.com/images/hotel/max1024x768/177/177622915.jpg',
+	available: true,
+};
 function createCard() {
 	const card = `
   <article class="card-body">
