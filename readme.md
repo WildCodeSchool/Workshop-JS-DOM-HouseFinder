@@ -19,7 +19,7 @@ Technique utilisée : Template String.
 
 1 - Créer une variable `section` qui récupère via le `document.get...` la balise <section> qui nous servira de point d'ancrage pour insérer des éléments.
 
-2 - Créer une fonction `createCard()` qui servira pour générer les cartes. À l'intérieur de celle-ci, ajoute une variable `card`. Donne-lui la valeur du code html de toute la balise <article></article>.
+2 - Créer une fonction `createCard()` qui servira pour générer les cartes. À l'intérieur de celle-ci, ajoute une variable `card`. Donne-lui la valeur du code html de toute la balise "<article>".
 
 ```
  const card = `
@@ -54,13 +54,13 @@ const home = {
 
 9 - Créer une fonction `render()` qui englobe la boucle puis appelle-la en dessous.
 
-10 - En haut de la fonction `render()` modifie le HTML de la balise <section> pour qu'il égale a une string vide.
+10 - En haut de la fonction `render()` modifie le HTML de la balise "<section>" pour qu'il égale a une string vide.
 
 ## 2nd Part - utilisation du filtre
 
 1 - En haut de ton fichier _script.js_, créer une variable globale `selectValue` que l'on initialisera à "All".
 
-2 - Dans le fichier _index.html_ ajoute au <button> du <header> un événement `onclick` avec comme valeur la fonction `filter()`. Dans le fichier _script.js_, créer la fonction `filter()`. Puis assigner a la variable `selectValue` créée précedement, la valeur de la balise <select>.
+2 - Dans le fichier _index.html_ ajoute au "<button>" du "<header>" un événement `onclick` avec comme valeur la fonction `filter()`. Dans le fichier _script.js_, créer la fonction `filter()`. Puis assigner a la variable `selectValue` créée précedement, la valeur de la balise "<select>".
 
 ```
 ...getElementById('app').value
@@ -69,7 +69,7 @@ const home = {
 3 - Ajouter en bas de `filter()` un appel à la fonction `render()`.
 
 4 - Dans la boucle de `render()` ajoute un `if` avant `createCard()` pour filtrer les résultats. Dans un 1er temps verifie que le type des maisons est égale a la valeur du `selectValue`.
-!!! WARNING : aucune maison ne s'affiche, joue avec le <select> voir si ta condition est bonne !!!
+!!! WARNING : aucune maison ne s'affiche, joue avec le "<select>" voir si ta condition est bonne !!!
 
 5 - Maintenant récuperons toutes les maisons, ajoutons au `if` une condition ( || ) si `selectValue` est égale à "All".
 
