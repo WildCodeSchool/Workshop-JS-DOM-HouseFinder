@@ -68,11 +68,9 @@ const home = {
 
 3 - Ajouter en bas de `filter()` un appel à la fonction `render()`.
 
-4 - Pour pouvoir mettre a jour l'affichage il faut d'abord supprimer l'ensemble des cartes. Pour cela en haut de `render()`, ré-initialise le `innerHTML` de la variable `section` en une string vide.
-
-5 - Dans la boucle de `render()` ajoute un `if` avant `createCard()` pour filtrer les résultats. Dans un 1er temps verifie que le type des maisons est égale a la valeur du `selectValue`.
+4 - Dans la boucle de `render()` ajoute un `if` avant `createCard()` pour filtrer les résultats. Dans un 1er temps verifie que le type des maisons est égale a la valeur du `selectValue`.
 !!! WARNING : aucune maison ne s'affiche, joue avec le <select> voir si ta condition est bonne !!!
 
-6 - Maintenant récuperons toutes les maisons, ajoutons au `if` une condition ( || ) si `selectValue` est égale à "All".
+5 - Maintenant récuperons toutes les maisons, ajoutons au `if` une condition ( || ) si `selectValue` est égale à "All".
 
 Bien joué à toi, tu as créé un outil qui satisfera John Doe. Il a l'air très heureux.
