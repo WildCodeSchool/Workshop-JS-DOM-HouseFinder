@@ -62,6 +62,7 @@ function createCard(data) {
 	section.appendChild(div);
 }
 function render() {
+	section.innerHTML = '';
 	for (let i = 0; i < homes.length; i++) {
 		createCard(homes[i]);
 	}
