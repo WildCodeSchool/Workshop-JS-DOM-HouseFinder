@@ -15,7 +15,7 @@ Technique utilisée : Template String.
 
 ## Une étape après l'autre
 
-## 1st Part - Preparé les fondations
+## 1st Part - Preparer les fondations
 
 1 - Créer une variable `section` qui récupère via le `document.get...` la balise `<section>` qui nous servira de point d'ancrage pour insérer des éléments.
 
